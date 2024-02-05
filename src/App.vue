@@ -1,14 +1,13 @@
 
-
 <script setup>
+  
 import { ref } from "vue"
 import backgroundImage from '@/assets/background.jpg';
+  
 const showModal = ref(false)
 const newNote = ref("");
 const errorMessage = ref("")
 const notes = ref([]);
-
-
 
 function getRandomColor() {
   return "hsl(" + Math.random() * 360 + ", 100%, 75%)";
@@ -55,7 +54,6 @@ const addNote = () => {
           <p class="main-text">{{ note.text }}</p>
           <p class="date">{{ note.date.toLocaleDateString("en-US") }}</p>
         </div>
-
 
       </div>
     </div>
@@ -165,7 +163,6 @@ header button {
   background: linear-gradient(135deg, #FF4B2B, #FF416C);
   transform: scale(1.05);
 }
-
 
 .modal p {
 color: red;
