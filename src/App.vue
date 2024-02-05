@@ -148,20 +148,24 @@ header button {
 }
 
 .modal button {
-  padding: 10px 20px;
+  padding: 15px 30px;
   font-size: 20px;
   width: 100%;
-  background-color: blueviolet;
+  background: linear-gradient(135deg, #FF416C, #FF4B2B);
   border: none;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
   margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(203, 136, 124, 0.3);
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
 }
 
-.modal .close {
-  background-color: red;
-  margin-top: 10px;
+.modal button:hover {
+  background: linear-gradient(135deg, #FF4B2B, #FF416C);
+  transform: scale(1.05);
 }
+
 
 .modal p {
 color: red;
